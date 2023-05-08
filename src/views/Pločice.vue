@@ -1,8 +1,8 @@
 <template>
-<div class="stranica">
-    <div class="main">
+
+    <div>
       
-      <Galerija :photos="photos" />
+      <gal :photos="photos"/>
       <p  class=" text-slate-200">
         Keramičke pločice se koriste još od vremena starog Egipta, i donedavno
         su se upotrebljavale isključivo za oblaganje zidova i podova u kupatilu.
@@ -13,15 +13,15 @@
         životnom prostoru.
       </p>
     </div>
-  </div>
+  
     
 </template>
 <script>
-import Galerija from "../components/Galerija.vue";
+import gal from "../components/gal.vue";
 export default {
   name: "Pločice",
   components: {
-    Galerija,
+    gal,
   },
   data() {
     return {

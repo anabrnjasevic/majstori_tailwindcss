@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Početna from '../views/Početna.vue'
-import Pločice from '../views/Pločice.vue'
-import Rigips from "../views/Rigips.vue"
-import Krečenje from "../views/Krečenje.vue"
-import Kontakt from "../views/Kontakt.vue"
+
+const Početna = () => import('../views/Početna.vue')
+const Rigips = () => import('../views/Rigips.vue')
+const Pločice = () => import('../views/Pločice.vue')
+const Kontakt = () => import('../views/Kontakt.vue')
+const Krečenje = () => import('../views/Krečenje.vue')
+
 
 
 const router = createRouter({

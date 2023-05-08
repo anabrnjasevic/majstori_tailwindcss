@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="pb-3">
         <nav>
             <ul class="flex flex-row h-2.5 w-screen text-2xl text-slate-200 ">
                 <li class="px-5"><router-link :to="{name:'Početna'}">Početna</router-link></li>
