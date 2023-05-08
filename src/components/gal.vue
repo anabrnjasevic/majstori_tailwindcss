@@ -10,10 +10,10 @@
 </div>
 <div class="flex flex-row justify-center">
   <button @click="previousPhoto" class="h-10 w-10">
-    <img src="public/assets/left-arrow-circle-svgrepo-com.svg" alt="button for prvious photo"/>
+    <img src="/assets/left-arrow-circle-svgrepo-com.svg" alt="button for prvious photo"/>
     </button>
   <button @click="nextPhoto" class="h-10 w-10">
-    <img src="public/assets/right-arrow-circle-svgrepo-com.svg" alt="button for next photo">
+    <img src="/assets/right-arrow-circle-svgrepo-com.svg" alt="button for next photo">
     </button>
 </div>
     

@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router';
   <main class='text-slate-200'>
     <div class="flex flex-row space-x-2">
     <RouterLink to="/plocice" class="inline-flex w-3/6 pt-3">
-      <img src="public/assets/plocicepocetna.jpg" class="h-auto max-w-full shadow-slate-50 shadow-lg" alt=""
+      <img src="/assets/plocicepocetna.jpg" class="h-auto max-w-full shadow-slate-50 shadow-lg" alt=""
     /></RouterLink>
     <transition name="slide-fade-l"
       ><RouterLink to="/plocice"  class='text-slate-200 self-center w-3/6 pt-3 '>
@@ -18,7 +18,7 @@ import { RouterLink } from 'vue-router';
   </div>
   <div class="flex flex-row space-x-2">
     <RouterLink to="/rigips" class="inline-flex w-3/6 pt-3"
-      ><img src="public/assets/rigips/rigips_zid.jpg" class="h-auto max-w-full shadow-slate-50 shadow-lg" alt=""
+      ><img src="/assets/rigips/rigips_zid.jpg" class="h-auto max-w-full shadow-slate-50 shadow-lg" alt=""
     /></RouterLink>
     <transition name="slide-fade-r"
       ><RouterLink to="/rigips" class='text-slate-200 self-center w-3/6 pt-3' 
@@ -30,7 +30,7 @@ import { RouterLink } from 'vue-router';
   </div>
   <div class="flex flex-row space-x-2">
     <RouterLink :to="{ name: 'Krečenje' }" class="inline-flex w-3/6 pt-3"
-      ><img src="public/assets/krecenje/IMG_20201230_163030.jpg" class="h-auto max-w-full shadow-slate-50 shadow-lg" alt=""
+      ><img src="/assets/krecenje/IMG_20201230_163030.jpg" class="h-auto max-w-full shadow-slate-50 shadow-lg" alt=""
     /></RouterLink>
     <transition name="slide-fade-l"
       ><RouterLink :to="{ name: 'Krečenje' }" class='text-slate-200 self-center w-3/6 pt-3' 

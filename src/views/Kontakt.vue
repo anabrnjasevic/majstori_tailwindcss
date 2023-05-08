@@ -6,7 +6,7 @@
             href="https://m.facebook.com/profile.php?id=1083390974"
             class="fejs-icon"
           >
-            <img src="public/assets/ikonicafb.webp" alt="ik" />
+            <img src="/assets/ikonicafb.webp" alt="ik" />
           </a>
           <a href="https://m.facebook.com/profile.php?id=1083390974" class="fejs">
             Upoznajte se sa nasim radovima!
@@ -15,7 +15,7 @@
           <a href="tel:+381649955119" id="telefon">064/99-55-119</a>
         </ul>
         <img
-          src="public/assets/kontakt.jpg"
+          src="/assets/kontakt.jpg"
           alt="slika nasih majstora"
           class="kontaktslika"
         />
