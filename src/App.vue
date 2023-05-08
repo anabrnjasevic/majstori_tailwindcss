@@ -12,7 +12,3 @@ import {RouterView} from 'vue-router';
 import Navigacija from "./components/Navigacija.vue";
 
 </script>
-
-<style lang="scss" scoped>
-
-</style>
