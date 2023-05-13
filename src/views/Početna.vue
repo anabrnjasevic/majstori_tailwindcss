@@ -3,37 +3,38 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-  <main class='text-slate-200'>
+  <main class='text-slate-200 space-y-3 '>
     <div class="flex flex-row space-x-2">
-    <RouterLink to="/plocice" class="inline-flex w-3/6 pt-3">
-      <img src="/assets/plocicepocetna.jpg" class="h-auto max-w-full shadow-slate-50 shadow-lg" alt=""
+    <RouterLink to="/plocice" class="inline-flex w-3/6 pt-5 ">
+      <img src="/assets/plocicepocetna.jpg" class="h-auto max-w-full shadow-slate-800 shadow-lg rounded-lg" alt=""
     /></RouterLink>
     <transition name="slide-fade-l"
-      ><RouterLink to="/plocice"  class='text-slate-200 self-center w-3/6 pt-3 '>
+      ><RouterLink to="/plocice"  class='text-slate-200 self-center w-3/6 px-5 text-lg' v-if="show">
         Pločice ne samo da su higijenski zahvalna zidna obloga za održavanje,
         njihova estetika je vrhunska. Pogledajte neke od ideja koja su naši
         klijenti izabrali.
       </RouterLink></transition
     >
   </div>
-  <div class="flex flex-row space-x-2">
-    <RouterLink to="/rigips" class="inline-flex w-3/6 pt-3"
-      ><img src="/assets/rigips/rigips_zid.jpg" class="h-auto max-w-full shadow-slate-50 shadow-lg" alt=""
-    /></RouterLink>
+  <div class="flex flex-row space-x-2 sm:flex-col">
     <transition name="slide-fade-r"
-      ><RouterLink to="/rigips" class='text-slate-200 self-center w-3/6 pt-3' 
+      ><RouterLink to="/rigips" class='text-slate-200 self-center w-3/6 px-5 text-lg' v-if="show"
         >Ukoliko renovirate životni prostor, jedno od najjednostavnijih rešenja
         svakako je rigips. Ali osim funkcionalnosti pregrađivanja on nudi
         mogućnost dodavanja dimenzije na vaše zidove.
       </RouterLink></transition
     >
+    <RouterLink to="/rigips" class="inline-flex w-3/6 pt-3"
+      ><img src="/assets/rigips/rigips_zid.jpg" class="h-auto max-w-full shadow-slate-800 shadow-lg rounded-lg" alt=""
+    /></RouterLink>
+    
   </div>
   <div class="flex flex-row space-x-2">
     <RouterLink :to="{ name: 'Krečenje' }" class="inline-flex w-3/6 pt-3"
-      ><img src="/assets/krecenje/IMG_20201230_163030.jpg" class="h-auto max-w-full shadow-slate-50 shadow-lg" alt=""
+      ><img src="/assets/krecenje/IMG_20201230_163030.jpg" class="h-auto max-w-full shadow-slate-800 shadow-lg rounded-lg" alt=""
     /></RouterLink>
     <transition name="slide-fade-l"
-      ><RouterLink :to="{ name: 'Krečenje' }" class='text-slate-200 self-center w-3/6 pt-3' 
+      ><RouterLink :to="{ name: 'Krečenje' }" class='text-slate-200 self-center w-3/6 px-5 text-lg' v-if="show" 
         >Svedene boje skandinavije, teksture peska, kamena ili satena, jarke
         boje juga- krečenjem možete osvežiti vaše zidove ili iskazati svoj lični
         stil.</RouterLink
@@ -46,8 +47,14 @@ import { RouterLink } from 'vue-router';
 export default {
   name: "Home",
   components: {},
- 
-  
+  data() {
+    return {
+      show: false,
+    };
+  },
+  mounted() {
+    this.show = true;
+  }, // might need this.$nextTick
 };
 </script>
 <style scoped>

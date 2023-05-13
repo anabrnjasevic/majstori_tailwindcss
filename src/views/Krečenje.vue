@@ -1,7 +1,7 @@
 <template>
   <div>
       <gal :photos="photos" />
-      <p class="text-slate-200">
+      <p class="text-slate-200 px-3 text-center">
         Klasično krečenje disperzionim ili poludisperzionim bojama ima osnovnu
         funkciju higijene zidova ali odavno je prevazišlo te okvire uz pomoć
         dekorativnih boja za krečenje, te sad ima estetsku crtu. Novi materijali

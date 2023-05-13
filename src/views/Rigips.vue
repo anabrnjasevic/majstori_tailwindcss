@@ -1,7 +1,7 @@
 <template>
     <div>
         <gal :photos="photos" />
-        <p class="text-slate-200">
+        <p class="text-slate-200 px-3 text-center">
           Rigips ploče se upotrebljavaju za suvu gradnju u enterijeru. Od
           pregradnih zidova,spuštenih plafona, oblaganja zidova do dekorativnih
           elemenata koje daju nikatan dodir vašem prostoru.Gips je u upotrebi
@@ -24,12 +24,12 @@
     data() {
       return {
         photos: [
-          ("src/assets/rigips/rigips_zid.jpg"),
-          ("src/assets/rigips/sank_1.jpg"),
-          ("src/assets/rigips/rigips_plafon.jpg"),
-          ("src/assets/rigips/rigips_plafon1.jpg"),
-          ("src/assets/rigips/rigips_plafon2.jpg"),
-          ("src/assets/rigips/rigips_plafon_drugi.jpg"),
+          ("/assets/rigips/rigips_zid.jpg"),
+          ("/assets/rigips/sank_1.jpg"),
+          ("/assets/rigips/rigips_plafon.jpg"),
+          ("/assets/rigips/rigips_plafon1.jpg"),
+          ("/assets/rigips/rigips_plafon2.jpg"),
+          ("/assets/rigips/rigips_plafon_drugi.jpg"),
         ],
       };
     },

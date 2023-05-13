@@ -1,10 +1,10 @@
-<template>
-    <div class="flex flex-row overflow-x-scroll ">
+<template class="my-3">
+    <div class="flex flex-row relative h-[60vh] my-3 overflow-x-scroll justify-start snap-x snap-mandatory">
     <img v-for="(photo,index) in photos" 
     tabindex="0"
     :key="index" 
     :src="photo" 
-    class="h-80 p-3  focus:scale-150"
+    class="h-80 p-1 focus:scale-125 ease-in duration-300 origin-center mt-12 focus:p-0 focus:snap-center focus:border-2 rounded-lg "
     @focus="focusedIndex = photos.indexOf(photo)"
     />
 </div>
@@ -26,7 +26,9 @@ const props = defineProps ({
 })
 
 const focusedIndex = ref(-1);
-console.log(focusedIndex.value)
+
+
+
 
 function nextPhoto() {
     const photos = document.querySelectorAll('.flex img');
@@ -36,20 +38,28 @@ function nextPhoto() {
     photos[nextIndex].focus();
     focusedIndex.value = nextIndex;
   }
+  else {
+    photos[0].focus();
+  }
+  console.log(focusedIndex.value)
 }
 
 function previousPhoto() {
     const photos = document.querySelectorAll('.flex img');
-  const currentIndex = focusedIndex.value;
-  if (currentIndex < photos.length - 1) {
-    const nextIndex = currentIndex - 1;
-    photos[nextIndex].focus();
-    focusedIndex.value = nextIndex;
+  let currentIndex = focusedIndex.value;
+  if (currentIndex > 0) {
+    const previousIndex = currentIndex - 1;
+    photos[previousIndex].focus();
+    focusedIndex.value = previousIndex;
   }
+  else {
+    currentIndex = photos.length - 1;
+    photos[currentIndex].focus();
+    focusedIndex.value = currentIndex;
+  }
+  
+  console.log(focusedIndex.value)
 }
 
 </script>
 
-<style lang="scss" scoped>
-
-</style>

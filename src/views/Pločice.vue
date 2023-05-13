@@ -3,7 +3,7 @@
     <div>
       
       <gal :photos="photos"/>
-      <p  class=" text-slate-200">
+      <p  class=" text-slate-200 px-3 text-center">
         Keramičke pločice se koriste još od vremena starog Egipta, i donedavno
         su se upotrebljavale isključivo za oblaganje zidova i podova u kupatilu.
         Međutim, danas se keramičke pločice koriste u ostalim prostorijama doma,
