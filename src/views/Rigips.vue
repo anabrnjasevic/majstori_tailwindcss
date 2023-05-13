@@ -24,12 +24,12 @@
     data() {
       return {
         photos: [
-          ("/assets/rigips/rigips_zid.jpg"),
-          ("/assets/rigips/sank_1.jpg"),
-          ("/assets/rigips/rigips_plafon.jpg"),
-          ("/assets/rigips/rigips_plafon1.jpg"),
-          ("/assets/rigips/rigips_plafon2.jpg"),
-          ("/assets/rigips/rigips_plafon_drugi.jpg"),
+          ("assets/rigips_zid.jpg"),
+          ("assets/sank_1.jpg"),
+          ("assets/rigips_plafon.jpg"),
+          ("assets/rigips_plafon1.jpg"),
+          ("assets/rigips_plafon2.jpg"),
+          ("assets/rigips_plafon_drugi.jpg"),
         ],
       };
     },

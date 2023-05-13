@@ -16,7 +16,7 @@ import { RouterLink } from 'vue-router';
       </RouterLink></transition
     >
   </div>
-  <div class="flex flex-row space-x-2 sm:flex-col">
+  <div class="flex flex-row space-x-2">
     <transition name="slide-fade-r"
       ><RouterLink to="/rigips" class='text-slate-200 self-center w-3/6 px-5 text-lg' v-if="show"
         >Ukoliko renovirate životni prostor, jedno od najjednostavnijih rešenja
@@ -25,13 +25,13 @@ import { RouterLink } from 'vue-router';
       </RouterLink></transition
     >
     <RouterLink to="/rigips" class="inline-flex w-3/6 pt-3"
-      ><img src="/assets/rigips/rigips_zid.jpg" class="h-auto max-w-full shadow-slate-800 shadow-lg rounded-lg" alt=""
+      ><img src="/assets/rigips_zid.jpg" class="h-auto max-w-full shadow-slate-800 shadow-lg rounded-lg" alt=""
     /></RouterLink>
     
   </div>
   <div class="flex flex-row space-x-2">
     <RouterLink :to="{ name: 'Krečenje' }" class="inline-flex w-3/6 pt-3"
-      ><img src="/assets/krecenje/IMG_20201230_163030.jpg" class="h-auto max-w-full shadow-slate-800 shadow-lg rounded-lg" alt=""
+      ><img src="/assets/IMG_20201230_163030.jpg" class="h-auto max-w-full shadow-slate-800 shadow-lg rounded-lg" alt=""
     /></RouterLink>
     <transition name="slide-fade-l"
       ><RouterLink :to="{ name: 'Krečenje' }" class='text-slate-200 self-center w-3/6 px-5 text-lg' v-if="show" 

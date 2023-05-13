@@ -23,8 +23,8 @@ export default {
   data() {
     return {
       photos: [
-        ("/assets/krecenje/IMG_20201230_133647.jpg"),
-        ("/assets/krecenje/IMG_20201230_163030.jpg"),
+        ("assets/IMG_20201230_133647.jpg"),
+        ("assets/IMG_20201230_163030.jpg"),
       ],
     };
   },
