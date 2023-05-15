@@ -5,6 +5,14 @@
     <Navigacija />
     <div class="mt-5"><RouterView/></div>
   </div>
+
+
+<footer
+  class="bg-gradient-to-r from-slate-700 to-slate-900 text-center lg:text-left">
+  <div class="p-4 text-center text-neutral-700 dark:text-neutral-200">
+    © 2023 Copyright:Helix021
+  </div>
+</footer>
 </template>
 
 <script setup>
