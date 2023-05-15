@@ -4,7 +4,7 @@
     tabindex="0"
     :key="index" 
     :src="photo" 
-    class="h-80 p-1 focus:scale-125 ease-in duration-300 origin-center mt-12 focus:p-0 focus:snap-center focus:border-2 rounded-lg "
+    class="h-80 p-1 focus:scale-y-105 md:focus:scale-125 ease-in duration-300 origin-center mt-12 focus:p-0 focus:snap-center focus:border-2 rounded-lg "
     @focus="focusedIndex = photos.indexOf(photo)"
     />
 </div>
