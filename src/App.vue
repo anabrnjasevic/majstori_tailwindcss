@@ -3,7 +3,7 @@
     <header class="text-3xl md:text-7xl sticky top-0 text-slate-50 text-center bg-gradient-to-r from-slate-700 to-slate-900" >AQUACOLOR</header>
     
     <Navigacija />
-    <div><RouterView/></div>
+    <div class="mt-5"><RouterView/></div>
   </div>
 </template>
 

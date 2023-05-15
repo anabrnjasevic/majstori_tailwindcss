@@ -32,8 +32,9 @@ const focusedIndex = ref(-1);
 
 function nextPhoto() {
     const photos = document.querySelectorAll('.flex img');
+    //console.log(photos.length)
   const currentIndex = focusedIndex.value;
-  if (currentIndex < photos.length - 1) {
+  if (currentIndex < photos.length -3) {
     const nextIndex = currentIndex + 1;
     photos[nextIndex].focus();
     focusedIndex.value = nextIndex;
@@ -53,7 +54,7 @@ function previousPhoto() {
     focusedIndex.value = previousIndex;
   }
   else {
-    currentIndex = photos.length - 1;
+    currentIndex = photos.length - 3;
     photos[currentIndex].focus();
     focusedIndex.value = currentIndex;
   }

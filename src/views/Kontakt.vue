@@ -10,9 +10,9 @@
             Upoznajte se sa nasim radovima!
           </a>
         </div>
-        <div class="flex flex-col md:flex-row space-y-10">
+        <div class="flex flex-col space-y-10">
           <span class="mx-auto">...ili pozovite ukoliko imate pitanja</span>
-          <a href="tel:+381649955119" class="mx-auto"> 064/99-55-119</a>
+          <a href="tel:+381649955119" class="mx-auto "> 064/99-55-119</a>
           
         </div>
       </div>

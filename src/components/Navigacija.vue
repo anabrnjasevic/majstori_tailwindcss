@@ -24,9 +24,11 @@
 
 
 <script setup>
-import { ref } from 'vue';
+import { ref} from 'vue';
 
 const vidime=ref(false);
+
+
 
 function show() {
     vidime.value=!vidime.value
