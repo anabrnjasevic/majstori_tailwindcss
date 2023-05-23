@@ -9,7 +9,7 @@ const Krečenje = () => import('../views/Krečenje.vue')
 
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/github.com/anabrnjasevic/majstori_tailwindcss/'),
   routes: [
     {
       path: '/',
@@ -41,6 +41,13 @@ const router = createRouter({
       component: Kontakt,
       meta: { transition: "slide-fade-r" },
     },
+    {
+      path:"/index.html",
+      name: 'index.html'
+    },
+    { path: '/:pathMatch(.*)*', 
+    beforeEnter: (to, from, next) => { next('/404') } },
+
    
   ]
 })
