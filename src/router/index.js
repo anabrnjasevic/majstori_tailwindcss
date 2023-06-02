@@ -5,7 +5,7 @@ const Rigips = () => import('../views/Rigips.vue')
 const Pločice = () => import('../views/Pločice.vue')
 const Kontakt = () => import('../views/Kontakt.vue')
 const Krečenje = () => import('../views/Krečenje.vue')
-const redirect = () => import('../../public/redirect.html')
+
 
 
 
@@ -43,11 +43,6 @@ const router = createRouter({
       component: Kontakt,
       meta: { transition: "slide-fade-r" },
     },
-    {
-      path:'/:pathName(.*)',
-      name:'redirect',
-      component: redirect,
-    }
    
   ]
 })
