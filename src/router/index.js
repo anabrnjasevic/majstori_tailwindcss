@@ -1,10 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const Početna = () => import('../views/Početna.vue')
 const Rigips = () => import('../views/Rigips.vue')
 const Pločice = () => import('../views/Pločice.vue')
 const Kontakt = () => import('../views/Kontakt.vue')
 const Krečenje = () => import('../views/Krečenje.vue')
+const redirect = () => import('../../redirect.html')
+
 
 
 
@@ -41,6 +43,10 @@ const router = createRouter({
       component: Kontakt,
       meta: { transition: "slide-fade-r" },
     },
+    {
+      path:'/:pathName(.*)',
+      name:'redirect',
+    }
    
   ]
 })
