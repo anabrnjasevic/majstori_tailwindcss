@@ -46,6 +46,7 @@ const router = createRouter({
     {
       path:'/:pathName(.*)',
       name:'redirect',
+      component: redirect,
     }
    
   ]
