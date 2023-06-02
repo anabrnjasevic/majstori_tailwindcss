@@ -5,7 +5,7 @@ const Rigips = () => import('../views/Rigips.vue')
 const Pločice = () => import('../views/Pločice.vue')
 const Kontakt = () => import('../views/Kontakt.vue')
 const Krečenje = () => import('../views/Krečenje.vue')
-const redirect = () => import('../../redirect.html')
+const redirect = () => import('../../public/redirect.html')
 
 
 
