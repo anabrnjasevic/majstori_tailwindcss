@@ -31,7 +31,7 @@ const router = createRouter({
       meta: { transition: "slide-fade-r" },
     },
     {
-      path: "/krečenje",
+      path: "/krecenje",
       name: "Krečenje",
       component: Krečenje,
       meta: { transition: "slide-fade-r" },

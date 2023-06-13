@@ -18,7 +18,9 @@
 </template>
 <script>
 import gal from "../components/gal.vue";
+
 export default {
+  mounted() { import ("../components/gal.vue")},
   name: "Pločice",
   components: {
     gal,
@@ -41,6 +43,7 @@ export default {
       ],
     };
   },
+  
 };
 </script>
 
