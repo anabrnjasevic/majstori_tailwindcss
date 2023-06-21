@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-  <div class="relative overflow-hidden bg-cover bg-no-repeat bg-center h-screen bg-[url('public/assets/satria-hutama-2quuh5yQJvU-unsplash.jpg')]"></div>
+  <div class="relative overflow-hidden bg-cover bg-no-repeat bg-center h-screen bg-[url('/assets/satria-hutama-2quuh5yQJvU-unsplash.jpg')]"></div>
   <div
     class="absolute bottom-0 left-0 right-0 top-14 h-screen w-full overflow-hidden bg-fixed"
     style="background-color: hsla(0, 0%, 0%, 0.4)">

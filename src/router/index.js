@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 const Početna = () => import('../views/Početna.vue')
 const Rigips = () => import('../views/Rigips.vue')
 const Pločice = () => import('../views/Pločice.vue')
-const Kontakt = () => import('../views/Kontakt.html')
+const Kontakt = () => import('../views/Kontakt.vue')
 const Krečenje = () => import('../views/Krečenje.vue')
 
 

@@ -1,32 +1,4 @@
-
-   
-  <!--<div class="text-slate-200 text-xl flex flex-col md:flex-row">
-      <div class="flex flex-col self-center space-y-10 md:space-y-36">
-        <div class="flex flex-row p-5 space-x-5">
-          <a href="https://m.facebook.com/profile.php?id=1083390974">
-            <img src="/assets/ikonicafb.webp" alt="ik" />
-          </a>
-          <a href="https://m.facebook.com/profile.php?id=1083390974" class="self-center">
-            Upoznajte se sa nasim radovima!
-          </a>
-        </div>
-        <div class="flex flex-col space-y-10">
-          <span class="mx-auto">...ili pozovite ukoliko imate pitanja</span>
-          <a href="tel:+381649955119" class="mx-auto "> 064/99-55-119</a>
-          
-        </div>
-      </div>
-        <img
-          src="/assets/kontakt.jpg"
-          alt="slika nasih majstora"
-          class="m-5 rounded-full shadow-slate-800 shadow-lg"
-        />
-      <div class="flex flex-col p-5 self-center space-y-10 md:space-y-36">
-        <p class="mx-auto">Tu smo za svaku vasu ideju!</p>
-        <p class="mx-auto">Adresa: Kozaračka 2, Sremska Mitrovica</p>
-      </div>
-  </div>-->
-<!-- Container for demo purpose -->
+<template>
 <div class="container my-24 mx-auto md:px-6">
   <!-- Section: Design Block -->
   <section class="mb-32 text-slate-200">
@@ -69,14 +41,15 @@
           </div>
         </div>
         <div class="mx-auto max-w-[700px]">
-          <form name="contact" method="POST" netlify netlify-honeypot="bot-field">
+          <form name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact" />
             <p class="hidden">
     <label>
       Don’t fill this out if you’re human: <input name="bot-field" />
     </label>
   </p>
             <div class="relative mb-6" data-te-input-wrapper-init>
-              <input type="text" v-model="firstName"
+              <input type="text" name="firstName"
                 class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                 id="exampleInput90" placeholder="Name" />
               <label
@@ -85,7 +58,7 @@
               </label>
             </div>
             <div class="relative mb-6" data-te-input-wrapper-init>
-              <input type="email" v-model="email"
+              <input type="email" name="email"
                 class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                 id="exampleInput91" placeholder="Email address" />
               <label
@@ -94,7 +67,7 @@
               </label>
             </div>
             <div class="relative mb-6" data-te-input-wrapper-init>
-              <textarea v-model="message"
+              <textarea name="message"
                 class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                 id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
               <label for="exampleFormControlTextarea1"
@@ -120,4 +93,5 @@
   <!-- Section: Design Block -->
 </div>
 <!-- Container for demo purpose -->
+</template>
 
