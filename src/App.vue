@@ -19,6 +19,13 @@
 <script setup>
 import {RouterView} from 'vue-router'; 
 import Navigacija from "./components/Navigacija.vue";
+import {onMounted} from 'vue';
+import { Input, initTE } from "tw-elements";
+onMounted(() => {
+   
+    initTE({ Input });
+    
+})
 
 
 </script>
