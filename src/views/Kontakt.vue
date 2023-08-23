@@ -93,6 +93,13 @@
 </template>
 
 <script>
+import {onMounted} from 'vue';
+import { Input, initTE } from "tw-elements";
+onMounted(() => {
+   
+    initTE({ Input });
+    
+})
  export default {
   name :'Kontakt'
  }
